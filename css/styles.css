@@ -198,7 +198,7 @@ header a {
   gap: 9px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 411px) {
   .hero-container {
     /* background-color: #bcd0e5; */
     max-width: 409px;
@@ -240,12 +240,6 @@ header a {
   .hero-btn-link {
     gap: 28px;
   }
-
-  /* .title-hero,
-  .text-hero,
-  .hero-btn-link {
-    border: 1px solid green;
-  } */
 }
 
 /* #endregion SECTION HERO */
@@ -308,6 +302,36 @@ header a {
   display: block;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 411px) {
+  .container {
+    max-width: 409px;
+  }
+
+  .title-for-you {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 116px;
+    margin-bottom: 50px;
+  }
+
+  .features {
+    display: flex;
+    clear: auto;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .features svg {
+    margin-bottom: 24px;
+  }
+}
+
 /* #endregion section For You */
 
 /* #region section Management */
@@ -329,6 +353,9 @@ header a {
 
 .left-side-management h3 {
   margin: 0 0 12px 0;
+
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .left-side-management h3 {
@@ -347,6 +374,33 @@ header a {
   font-size: 16px;
   line-height: 162%;
   color: var(--main-color);
+}
+
+@media screen and (max-width: 411px) {
+  .container {
+    max-width: 409px;
+  }
+
+  .management-container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .left-side-management li:not(:last-child) {
+    margin: 0 0 16px 0;
+  }
+
+  .title-management {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--main-color);
+    margin: 0 0 16px 0;
+  }
+
+  .management-container svg {
+    max-width: 349px;
+    max-height: 306px;
+  }
 }
 
 /* #endregion section Management */
