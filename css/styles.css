@@ -386,6 +386,10 @@ header a {
     gap: 50px;
   }
 
+  .left-side-management ul {
+    padding: 0 0 23px 0;
+  }
+
   .left-side-management li:not(:last-child) {
     margin: 0 0 16px 0;
   }
@@ -465,6 +469,33 @@ header a {
   background-color: #d9d9d9;
   height: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 411px) {
+  .customer-container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  .title-support {
+    margin-bottom: 16px;
+  }
+
+  .scnd-text-support {
+    margin-bottom: 16px;
+  }
+
+  .right-side-support ul > li {
+    gap: 30px;
+  }
+
+  .box-customer {
+    display: none;
+  }
 }
 
 /* #endregion section Customer Support */
