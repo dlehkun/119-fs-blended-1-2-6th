@@ -160,6 +160,7 @@ header a {
   font-size: 40px;
   line-height: 150%;
   margin: 0 0 18px 0;
+  max-width: 420px;
 }
 
 .text-hero {
@@ -197,11 +198,55 @@ header a {
   gap: 9px;
 }
 
-/* .hero-img {
-  display: block;
-  width: 610px;
-  height: auto;
-} */
+@media screen and (max-width: 480px) {
+  .hero-container {
+    /* background-color: #bcd0e5; */
+    max-width: 409px;
+    flex-direction: column-reverse;
+    gap: 11px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-interactive {
+    max-width: 100%;
+  }
+
+  .hero-img {
+    max-width: 338px;
+    max-height: 311px;
+  }
+
+  .title-hero {
+    margin-bottom: 11px;
+    font-size: 36px;
+  }
+
+  .text-hero {
+    max-width: 340px;
+    margin: 0 auto 32px auto;
+  }
+
+  .btn-getstart {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    width: 141px;
+    height: 53px;
+  }
+
+  .hero-btn-link {
+    gap: 28px;
+  }
+
+  /* .title-hero,
+  .text-hero,
+  .hero-btn-link {
+    border: 1px solid green;
+  } */
+}
 
 /* #endregion SECTION HERO */
 
