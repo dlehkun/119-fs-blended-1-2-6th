@@ -556,6 +556,30 @@ header a {
   line-height: 162%;
 }
 
+@media screen and (max-width: 411px) {
+  .collaborative-container {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .collaborative-container svg {
+    max-width: 350px;
+    max-height: 291px;
+  }
+
+  .title-collaborative {
+    margin-bottom: 16px;
+  }
+
+  .scnd-text-collaborative {
+    margin-bottom: 16px;
+  }
+
+  .left-side-collaborative ul li:first-child {
+    margin-bottom: 25px;
+  }
+}
+
 /* #endregion section Collaborative */
 
 /* #region section Easy Process */
