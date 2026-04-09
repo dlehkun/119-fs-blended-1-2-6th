@@ -602,7 +602,9 @@ header a {
   font-size: 16px;
   line-height: 162%;
   text-align: center;
-  margin-bottom: 40px;
+
+  max-width: 542px;
+  margin: 0 auto 64px auto;
 }
 
 .ease-process-container ul {
@@ -626,15 +628,19 @@ header a {
 }
 
 .message {
-  position: relative;
-}
-
-.ease-process-container ul li svg {
+  background-image: url(../images/sprite.svg#icon-cloud);
   border-radius: 40px;
-  fill: transparent;
+  fill: #fff;
   box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
   width: 281px;
-  height: 50px;
+  min-height: 50px;
+  padding: 13px 20px;
 }
 
 .item-text-process {
@@ -642,13 +648,6 @@ header a {
   font-size: 16px;
   text-align: center;
   color: #2f281e;
-  position: absolute;
-  top: 23%;
-  right: 10%;
-}
-
-.ease-process-container ul li:nth-child(2) p {
-  right: 15%;
 }
 
 .btn-contact-expert {
@@ -661,6 +660,59 @@ header a {
   color: #fff;
   background-color: var(--accent-color);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 411px) {
+  .ease-process-container {
+    max-width: 368px;
+    padding-top: 141px;
+  }
+
+  .title-easy-process {
+    min-width: 348px;
+    margin-bottom: 8px;
+  }
+
+  .text-easy-process {
+    min-width: 338px;
+    margin-bottom: 40px;
+  }
+
+  .ease-process-container ul {
+    row-gap: 32px;
+    column-gap: 0;
+    margin-bottom: 32px;
+  }
+
+  .ease-process-container ul li:first-child,
+  .ease-process-container ul li:last-child {
+    width: 100%;
+    gap: 14px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .ease-process-container ul li:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .ease-process-container ul li img {
+    width: 89px;
+    height: 89px;
+  }
+
+  .message {
+    width: 100%;
+    max-width: 237px;
+    max-height: 64px;
+    padding: 4px 20px;
+    background-size: cover;
+  }
+
+  .btn-contact-expert {
+    width: 100%;
+    max-width: 216px;
+  }
 }
 
 /* #endregion section Easy Process */
