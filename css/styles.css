@@ -664,17 +664,20 @@ header a {
 
 @media screen and (max-width: 411px) {
   .ease-process-container {
-    max-width: 368px;
+    max-width: 388px;
     padding-top: 141px;
   }
 
   .title-easy-process {
-    min-width: 348px;
+    width: 100%;
+    max-width: 348px;
+    margin: 0 auto;
     margin-bottom: 8px;
   }
 
   .text-easy-process {
-    min-width: 338px;
+    width: 100%;
+    max-width: 338px;
     margin-bottom: 40px;
   }
 
