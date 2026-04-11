@@ -739,6 +739,7 @@ header a {
   font-size: 16px;
   line-height: 162%;
   margin-bottom: 40px;
+  max-width: 475px;
 }
 
 .strategies-container ul {
@@ -788,6 +789,31 @@ header a {
   font-size: 24px;
   line-height: 167%;
   padding-left: 27px;
+}
+
+@media screen and (max-width: 411px) {
+  .strategies-container {
+    max-width: 389px;
+    padding-top: 100px;
+  }
+
+  .title-strategies {
+    width: 100%;
+    max-width: 349px;
+    margin-bottom: 8px;
+  }
+
+  .text-strategies {
+    width: 100%;
+    max-width: 349px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .strategies-container ul {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 /* #endregion section Strategies */
@@ -923,6 +949,31 @@ header a {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 411px) {
+  .price-container {
+    max-width: 362px;
+    padding-top: 61px;
+  }
+  .title-price {
+    width: 100%;
+    max-width: 192px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .text-price {
+    width: 100%;
+    max-width: 213px;
+    margin: 0 auto 74px auto;
+  }
+
+  .price-cards {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
 /* #endregion section Price */
 
 /* #region CLIENTS SAY */
@@ -944,12 +995,14 @@ header a {
 
 .text-cliets-say-section {
   color: var(--main-color);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 175%;
   letter-spacing: 0.01em;
   text-align: center;
   margin-bottom: 40px;
+  max-width: 473px;
+  margin: 0 auto 40px auto;
 }
 
 .user-cards {
@@ -971,12 +1024,6 @@ header a {
   display: flex;
   margin-bottom: 16px;
 }
-
-/* .star-icon {
-  fill: transparent;
-  stroke: #f3cd03;
-  stroke-width: 4px;
-} */
 
 .text-comment {
   font-weight: 400;
@@ -1017,6 +1064,33 @@ header a {
   line-height: 171%;
   letter-spacing: 0.01em;
   color: #252b42;
+}
+
+@media screen and (max-width: 411px) {
+  .clients-container {
+    max-width: 367px;
+    padding-top: 100px;
+  }
+
+  .title-cliets-say-sectoin {
+    width: 100%;
+    max-width: 302px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .text-cliets-say-section {
+    width: 100%;
+    max-width: 323px;
+    margin: 0 auto 32px auto;
+  }
+
+  .user-cards {
+    flex-direction: column;
+    gap: 32px;
+    flex-basis: 100%;
+    max-width: 327px;
+  }
 }
 
 /* #endregion CLIENTS SAY */
@@ -1063,9 +1137,42 @@ header a {
   border-radius: 8px;
 }
 
-/* .container-join img {
-  padding-right: 30px;
-} */
+@media screen and (max-width: 411px) {
+  .container-join {
+    max-width: 411px;
+    padding: 100px 20px 0 20px;
+  }
+
+  .card-join-100-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 371px;
+    max-width: 100%;
+    padding-top: 17px;
+  }
+
+  .left-side {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 104px;
+  }
+
+  .title-join-100-section {
+    text-align: center;
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+  }
+
+  .btn-get-this {
+    margin: 0 auto 42px auto;
+  }
+}
 
 /* #endregion JOIN HUNDRED */
 
@@ -1222,6 +1329,62 @@ footer a {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
+}
+
+@media screen and (max-width: 411px) {
+  .footer-container {
+    max-width: 365px;
+    padding: 100px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .product-social-media {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .bottom-social-media-icon-container {
+    justify-content: space-between;
+  }
+
+  .bottom-nav-container {
+    margin: 0;
+    text-align: center;
+  }
+
+  .bottom-nav-container-second {
+    margin: 0;
+    text-align: center;
+  }
+
+  .bottom-text-deal {
+    text-align: center;
+    margin: 0 auto 32px auto;
+  }
+
+  .footer-phone-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+.footer-phone-input::placeholder,
+.footer-phone-input:hover::placeholder,
+.footer-phone-input:focus::placeholder {
+  opacity: 0;
+  color: transparent;
+}
+
+  .footer-phone-input{
+  margin-bottom: 21px;
+  }
+
+  .icon-footer-mobile{
+    display: none;
+  }
 }
 
 /* #endregion Footer */
